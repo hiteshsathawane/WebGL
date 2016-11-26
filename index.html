@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <title>Solar System Simulation</title>
     <script src="js/babylon.2.1.debug.js"></script>
+    <script src="js/bGUI-1.3.1.js"></script>
  
     <style>
         html, body {
@@ -20,16 +21,28 @@
         #renderCanvas {
             width: 100%;
             height: 100%;
-            touch-action: none;
+            touch-action: yes;
+            
+            padding: middle;
+            
         }
+        h1 {
+         color: limegreen;
+         margin-left: 40px;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
   </style>
 </head>
 <body>
     <canvas id="renderCanvas"></canvas>
     <script src="js/main.js"></script>
-    <script>
-        window.addEventListener("DOMContentLoaded",function(){});
-        jsApp.init();
+    <script src="js/earth.js"></script>
+	<script>
+    window.addEventListener("DOMContentLoaded",function(){});
+    jsApp.init();
     </script>
+
+
+<h1>Solar System Simulation</h1>
 </body>
 </html>
